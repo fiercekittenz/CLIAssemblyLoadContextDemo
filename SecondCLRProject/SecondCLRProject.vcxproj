@@ -129,6 +129,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="NetCoreInitializer.cpp" />
     <ClCompile Include="UnmanagedThing.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
@@ -136,6 +137,7 @@
     <ClCompile Include="UnmanagedThingMgd.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="NetCoreInitializer.h" />
     <ClInclude Include="UnmanagedThing.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

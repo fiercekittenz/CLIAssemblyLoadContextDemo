@@ -3,8 +3,10 @@
   <ItemGroup>
     <ClCompile Include="UnmanagedThing.cpp" />
     <ClCompile Include="UnmanagedThingMgd.cpp" />
+    <ClCompile Include="NetCoreInitializer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UnmanagedThing.h" />
+    <ClInclude Include="NetCoreInitializer.h" />
   </ItemGroup>
 </Project>
