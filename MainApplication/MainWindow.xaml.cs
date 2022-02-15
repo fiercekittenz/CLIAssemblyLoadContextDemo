@@ -24,6 +24,11 @@ namespace MainApplication
       {
          InitializeComponent();
 
+         // Uncomment the following to see how the AssemblyLoadContext issue is "fixed" by
+         // calling a dummy/hack method in the SecondCLRProject to trigger it to load referenced
+         // assemblies into the Default ALC.
+         //SecondCLRProject.NetCoreInitializer.InitializeHack();
+
          // Initialize the instance of our "manager" example.
          ManagedClassLib.Manager.Instance.DoAThing();
 
