@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+   <PropertyGroup>
+      <OutputType>WinExe</OutputType>
+      <TargetFramework>net5.0-windows</TargetFramework>
+      <PlatformTarget>x64</PlatformTarget>
+      <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+      <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+      <OutputPath>$(SolutionDir)bin\x64\$(Configuration)\</OutputPath>
+      <IntermediateOutputPath>$(SolutionDir)obj\x64\$(Configuration)\$(MSBuildProjectName)\</IntermediateOutputPath>
+      <UseWPF>true</UseWPF>
+   </PropertyGroup>
+
+   <ItemGroup>
+      <ProjectReference Include="..\CLRLibrary\CLRLibrary.vcxproj" />
+      <ProjectReference Include="..\ManagedClassLib\ManagedClassLib.csproj" />
+   </ItemGroup>
+
+</Project>
